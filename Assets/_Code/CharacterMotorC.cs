@@ -82,11 +82,11 @@ public class CharacterMotorC : MonoBehaviour
 
         // The maximum horizontal speed when moving
 
-        public float maxForwardSpeed = 10.0f;
+        public float maxForwardSpeed = 100.0f;
 
-        public float maxSidewaysSpeed = 10.0f;
+        public float maxSidewaysSpeed = 100.0f;
 
-        public float maxBackwardsSpeed = 10.0f;
+        public float maxBackwardsSpeed = 100.0f;
 
         
 
@@ -100,7 +100,7 @@ public class CharacterMotorC : MonoBehaviour
 
         // How fast does the character change speeds?  Higher is faster.
 
-        public float maxGroundAcceleration = 30.0f;
+        public float maxGroundAcceleration = 20.0f;
 
         public float maxAirAcceleration = 20.0f;
 
@@ -192,13 +192,13 @@ public class CharacterMotorC : MonoBehaviour
 
         // How high do we jump when pressing jump and letting go immediately
 
-        public float baseHeight = 1.0f;
+        public float baseHeight = 2.0f;
 
         
 
         // We add extraHeight units (meters) on top when holding the button down longer while jumping
 
-        public float extraHeight = 4.1f;
+        public float extraHeight = 1.1f;
 
         
 
@@ -270,7 +270,7 @@ public class CharacterMotorC : MonoBehaviour
 
     {
 
-        public bool enabled = true;
+        public bool enabled = false;
 
         
 
@@ -344,7 +344,7 @@ public class CharacterMotorC : MonoBehaviour
 
         // Does the character slide on too steep surfaces?
 
-        public bool enabled = true;
+        public bool enabled = false;
 
         
 
@@ -995,7 +995,7 @@ public class CharacterMotorC : MonoBehaviour
     void OnControllerColliderHit (ControllerColliderHit hit) 
 
     {
-
+		
         if (hit.normal.y > 0 && hit.normal.y > groundNormal.y && hit.moveDirection.y < 0) {
 
             if ((hit.point - movement.lastHitPoint).sqrMagnitude > 0.001 || lastGroundNormal == Vector3.zero)
