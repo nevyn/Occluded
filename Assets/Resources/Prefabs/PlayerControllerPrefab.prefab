@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: PlayerControllerPrefab
   m_TagString: Untagged
@@ -227,6 +228,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405377d5f08f3424fb14e12543c6c3b6, type: 3}
   m_Name: 
   cmotor: {fileID: 11400008}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2405bbbf491f462d9d11329f3bd8361, type: 3}
+  m_Name: 
+  cameraTransform: {fileID: 400002}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
