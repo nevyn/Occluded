@@ -2332,6 +2332,7 @@ GameObject:
   - 33: {fileID: 1304038983}
   - 23: {fileID: 1304038982}
   - 65: {fileID: 1304038985}
+  - 54: {fileID: 1304038986}
   m_Layer: 0
   m_Name: car_damage_level5
   m_TagString: Untagged
@@ -2373,7 +2374,7 @@ Transform:
   m_PrefabInternal: {fileID: 1560507828}
   m_GameObject: {fileID: 1304038981}
   m_LocalRotation: {x: 0, y: .380989462, z: 0, w: -.924579442}
-  m_LocalPosition: {x: 54.3208084, y: -4.08551121, z: -52.8491325}
+  m_LocalPosition: {x: 54.3208084, y: -3.91708899, z: -52.8491325}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2387,8 +2388,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.97487521, y: 1.03721893, z: 1.95256317}
+  m_Size: {x: 3.97487521, y: .910000026, z: 1.95256317}
   m_Center: {x: -.0401316918, y: .517432988, z: -.176154137}
+--- !u!54 &1304038986
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1304038981}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1304633604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,7 +3295,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e981ae7fb2e4ef42b7f6946602c94e4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.08551121
+      value: -3.91708899
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e981ae7fb2e4ef42b7f6946602c94e4, type: 2}
       propertyPath: m_LocalPosition.z
