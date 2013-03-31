@@ -19,11 +19,10 @@ public class InputController : MonoBehaviour {
 		
 			nextFire = Time.time + fireRate;
 			
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			GameObject clone = Instantiate(projectile, ray.origin+ray.direction*2.0f, Camera.main.transform.rotation) as GameObject;
+			GameObject clone = Instantiate(projectile, Camera.main.transform.position+Camera.main.transform.forward*1.1f, Camera.main.transform.rotation) as GameObject;
  				
     		// Add force to the cloned object in the object's forward direction
-   			clone.rigidbody.AddForce(ray.direction * 10.0f);
+   			clone.rigidbody.AddForce(Camera.main.transform.forward * 10.0f);
 		}
 		
 		/*
